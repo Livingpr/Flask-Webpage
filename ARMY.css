@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for the page content */
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Welcome Text Styling */
+h2 {
+    font-size: 2.5em;
+    color: cyan;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Logout Button Styling */
+a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+/* Footer or Additional Elements */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* Background Visual (Military-Themed) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('logo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(70%);
+}
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Success messages */
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Danger/Error messages */
+.alert-danger {
+    background-color: #f44336;
+    color: white;
+}
